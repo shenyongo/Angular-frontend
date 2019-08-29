@@ -1,0 +1,20 @@
+<div>  
+  <div class="row">  
+    <div class="col-sm-12 btn btn-primary">  
+        Welcome to DashBoard  
+        <div *ngIf="showStatus()">
+          <div *ngFor="let employee of employ" >
+            <div>{{addRow(employee)}}</div>
+          </div>
+          <ag-grid-angular #agGrid
+              style="widows: 500px; height: 500px;"
+              class="ag-theme-balham"
+              [gridOptions] ="gridOptions"
+              [columnDefs]="columnDefs"
+              (gridReady)="onGridReady($event)">
+          </ag-grid-angular>
+          <button type="button" class="btn btn-link px-0" (click)="Save()">Save Changes</button>
+        </div>
+    </div>  
+  </div>  
+</div>  

@@ -1,0 +1,11 @@
+
+html, body {
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+    line-height: 200%;
+}
+body h1 {
+    line-height: 5px;
+}

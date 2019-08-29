@@ -1,0 +1,38 @@
+nav {
+    list-style:none;
+    margin:0;
+    padding:10px;
+    text-align: center;
+}
+nav a {
+    padding: 12px;
+    width: 10%;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: lightblue;
+    border-radius: 4px;
+  }
+  nav a:hover {
+    font-weight: bold;
+    background-color: lightsalmon;
+  }
+
+  nav button {
+    padding: 12px;
+    width: 10%;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: lightblue;
+    border-radius: 4px;
+  }
+  nav button:hover {
+    font-weight: bold;
+    background-color: lightsalmon;
+  }
+
+  body {
+    color: white;
+    background-color: rgb(7, 41, 73);
+  }

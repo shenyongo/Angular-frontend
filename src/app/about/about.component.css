@@ -1,0 +1,35 @@
+h2 {
+    text-align: center;
+}
+
+#wrap {
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
+#content {
+    line-height: 120%;
+    float: left;
+    position: relative;
+    left: -50%;
+}
+ul{
+    columns: 2;
+}
+ul li {
+    line-height: 150%;
+    padding: 0;
+    list-style: none; 
+    text-indent: -.7em;
+}
+
+ul li::before {
+    color: rgb(255, 149, 28);
+    content: "* "; 
+    font-weight: bold;
+    display: inline-block;
+    font-size: 1em; 
+    /* use em or % */
+    left: -1.1225em; 
+}

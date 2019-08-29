@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <nav>
+  <a routerLink="/home">Home</a>
+  <a routerLink="/aboutme">About Me</a>
+  <a routerLink="/contact">Contact Me</a>
+  <a routerLink="/Dashboard">Dashboard</a>
+  <a href="/assets/Dozier_COSC_Resume_Web.pdf" target="_blank">Resume</a>
+</nav> -->
+<nav *ngIf="getStatus()">
+  <a routerLink="/home">Home</a>
+  <a routerLink="/aboutme">About Me</a>
+  <a routerLink="/contact">Contact Me</a>
+  <a *ngIf="getDes()" routerLink="/Dashboard">Dashboard</a>
+  <a href="/assets/Dozier_COSC_Resume_Web.pdf" target="_blank">Resume</a>
+  <button (click)="logout()">Logout</button>
+ </nav>
+ <div *ngIf="timeStart">
+
+	<p *ngIf="getStatus()"> User is idle for more than 10 minutes</p>
+
+  <p *ngIf="getStatus()"> system will wait for {{ seconds }} seconds, do you want to stay logged in? </p>
+  <button *ngIf="getStatus()" (click)="this.stop()">Continue</button>
+  <button *ngIf="getStatus()" (click)="logout()">Logout</button>
+
+</div>
+
+<router-outlet></router-outlet>>

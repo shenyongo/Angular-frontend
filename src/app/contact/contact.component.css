@@ -1,0 +1,21 @@
+html {
+    padding: 0;
+    margin: 0;
+  }
+br {
+    line-height: 200%;
+}
+div h1 {
+    font-size: 300%;
+}
+p {
+    text-align: center;
+    flex-direction: column;
+    font-size: 200%;
+    font-weight: bold;
+    display: block;
+}
+
+a {
+    color: lightblue;
+}
